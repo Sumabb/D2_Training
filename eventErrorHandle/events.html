@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+
+<html> 
+
+    <head> 
+
+        <title>HTML Events</title> 
+
+
+        <script type="text/javascript" > 
+
+           function mouseup(){ 
+
+            document.getElementById("demo").style.color="blue"; 
+
+            } 
+
+            function mousedown(){ 
+
+                document.getElementById("demo").style.color="green"; 
+
+            } 
+
+            function mouseover() 
+
+            { 
+
+                document.getElementById("btn1").style.backgroundColor="yellow"; 
+
+            } 
+
+            function mouseout() 
+
+            { 
+
+                document.getElementById("btn1").style.backgroundColor="grey"; 
+
+            } 
+
+            function keypress() 
+
+            { 
+
+                document.getElementById("name").style.backgroundColor="pink"; 
+
+            } 
+
+            function keyrelease(){ 
+
+                let name1=document.getElementById("name").value; 
+
+                document.getElementById("name").value=name1.toUpperCase(); 
+
+            } 
+
+        </script> 
+
+    </head> 
+
+    <body> 
+
+<p id="demo" onmousedown="mousedown()" onmouseup="mouseup()"> 
+
+    Data in Paragraph 
+
+</p> 
+
+<br/> 
+
+<br/> 
+
+<input type="button" id="btn1" onmouseover="mouseover()" onmouseout="mouseout()" value="Check in !!!"> 
+
+<br/><br/>  
+
+Name  : <input type="text" id="name" onkeypress="keypress()" onkeydown="keyrelease()"> <br><br> 
+
+    </body> 
+
+</html> 
