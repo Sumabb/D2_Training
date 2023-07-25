@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+
+<html> 
+
+    <head> 
+
+        <title> Error Handling</title> 
+
+        <script> 
+
+            function dividebyzero(){ 
+
+                try{ 
+
+                    let num1=100; 
+
+                    num1.toUpperCase(); 
+
+                                   
+
+            } 
+
+            catch(error) 
+
+            { 
+
+                document.getElementById("demo").innerHTML=error.name; 
+
+                document.getElementById("demo").innerHTML+=error.message; 
+
+            } 
+
+            } 
+
+            
+
+        </script> 
+
+    </head> 
+
+    <body> 
+
+         
+
+        <input type="button" onclick="dividebyzero()" value="Click"> 
+
+        <p id="demo"></p> 
+
+         
+
+    </body> 
+
+</html> 
